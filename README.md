@@ -24,11 +24,11 @@ print_r($dbl->log);
 
 The `query` function works similar to `printf`. The following conversion specifications are available. The code at the end shows the results with an input dictionary `{"key1":"value1", "key2":"value2"}`.
 
-**%@** -- quoted value / comma separated list `"value1","value2"` 
-**%K** -- unquoted value / comma separated list `value1,value2` 
-**%W** -- where (WHERE %W), key = value, connected with 'AND' `key1="value1" AND key2="value2"` 
-**%S** -- assign dictionary key to value (UPDATE SET %A) `key1="value1",key2="value2"` 
-**%I** -- insert (INSERT INTO %K %I) `(key1,key2) VALUES("value1","value2")` 
+**%@** — quoted value / comma separated list `'value1','value2'`<br>
+**%K** — unquoted value / comma separated list `value1,value2`<br>
+**%W** — where (WHERE %W), key = value, connected with 'AND' `key1='value1' AND key2='value2'`<br>
+**%S** — assign dictionary key to value (UPDATE SET %A) `key1='value1',key2='value2'`<br>
+**%I** — insert (INSERT INTO %K %I) `(key1,key2) VALUES('value1','value2')`<br>
 
 ```php
 <?php
