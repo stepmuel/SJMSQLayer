@@ -5,8 +5,9 @@ ini_set('display_errors', '1');
 
 require_once('SJMSQLayer.php');
 
-// Create an SJMSQLayer object with a in-memory SQLite database
+// Create in-memory SQLite database
 $db = new PDO('sqlite::memory:');
+// Create SJMSQLayer object 
 $dbl = new SJMSQLayer($db);
 
 // Activate logging
@@ -34,5 +35,7 @@ $d = $dbl->query('SELECT i, key2 as j FROM foo ORDER BY i DESC;')->getDict('i', 
 
 print_r($r);
 print_r($d);
+
+// Show all executed queries including error messages
 print_r($dbl->log);
 
