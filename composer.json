@@ -1,0 +1,19 @@
+{
+  "name": "stepmuel/sjmsqlayer",
+  "homepage": "https://github.com/stepmuel/SJMSQLayer",
+  "description": "SJMSQLayer simplifies the creation of SQL queries in PHP using a printf-like syntax.",
+  "type": "library",
+  "keywords": ["sql", "sqlite", "sqlayer"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stephan J. Müller",
+      "homepage": "https://heap.ch/"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "SJMSQLayer.php"
+    ]
+  }
+}
